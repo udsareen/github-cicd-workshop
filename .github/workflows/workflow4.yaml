@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
+      max-parallel: 1
       matrix:
         environment: [dev, int, pro]
     steps:
