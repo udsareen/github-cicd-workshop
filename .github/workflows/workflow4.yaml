@@ -31,4 +31,5 @@ jobs:
     steps:
       - name: Deploying
         run: echo "Deploying ${{ matrix.environment }}"
+    environment: ${{ matrix.environment }}
   
