@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: ./.github/actions/first-action@v1
+        uses: ./.github/actions/first-action
         with:
           who-to-greet: 'Someone'
       - name: Check if input and output are same
