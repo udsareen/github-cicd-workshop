@@ -28,7 +28,6 @@ jobs:
         with:
           context: exercise_3
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/myapp:latest
 
   # More jobs can be added
