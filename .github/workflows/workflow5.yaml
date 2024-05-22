@@ -18,5 +18,5 @@ jobs:
         with:
           who-to-greet: 'Someone'
       - name: Check if input and output are same
-        if: ${{ first-action.steps.foo.outputs.who-was-greeted == 'Someone' }}
+        if: ${{ steps.foo.outputs.who-was-greeted == 'Someone' }}
         run: echo input output matches.
